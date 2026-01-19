@@ -1,4 +1,6 @@
-# Design Portofolio
+# Crisis Water Web Project Project
 
-SO, in the first develop, i created this as a design portfolio so people can see what i designed back in the days. 
-It maybe have some changes in the future but for the first time, lets make this simple and i will upgrade it ASAP
+This is my first commit project web, i made this website due to some background like, 
+I made my first website back in the days, but it just not really good. So, i gotta start over with full ambition
+I see that we are in dangerous water crisis rn, so i want to make people understand (or maybe at least) know that we are here (Since this is my first time, the massages may not be delivered). I made this as a remindere about what we can do 
+I also want to learn git & github
