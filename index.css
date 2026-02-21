@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C4D8D;
+    border-radius: 0px 0px 18px 18px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: "Lalezar", sans-serif;
+    font-size: 35.98px;
+}
+
+nav ul li a{
+    color: #BDE8F5;
+    text-decoration: none;
+    cursor: move;
+}
+
+.CharityButton{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 55px;
+    background-color: #BDE8F5;
+    font-family: "Lalezar", sans-serif;
+    width: 195.65px;
+    height: 53.4px;
+    font-size: 28.83px;
+    border-radius: 8.42px;
+    color: #4988C4;
+    border: none;
+    cursor: crosshair;
+    margin-right: 52.81px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+main .Homepage{
+    position: relative; /*buat posisi child ikut relatif*/
+}
+
+main section #title{
+    display: block; /*cuz img is inline element*/
+    width: 1039.96px;
+    margin: auto;
+}
+
+main section .bubble2{
+    position: absolute;
+    bottom: -197px;
+    right: 0;
+
+}
+
+main section .bubble3{
+    position: absolute;
+    top: 30px;  
+    right: 110.7px; 
+}
+
+main section .bubble1{
+    position: absolute;
+    bottom: -220px;
+}
+
+main section .water{
+    position: absolute;
+    bottom: -220px;
+}
+
+.UrgencyPage{
+    background-color: #1c4d8d;
+    margin-top: 220px;
+}
+
+.UrgencyPage p{
+    font: "labrada";
+    color: #f0f0f0;
+}
+
+.UrgencyPage h2{
+    font: "Lalezar";
+    font-size: 79.71px;
+    color: #f0f0f0;
+}
+
+.ReportButton{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 55px;
+    background-color: #BDE8F5;
+    font-family: "Lalezar", sans-serif;
+    width: 195.65px;
+    height: 53.4px;
+    font-size: 28.83px;
+    border-radius: 8.42px;
+    color: #4988C4;
+    border: none;
+    cursor: crosshair;
+    margin-right: 52.81px;
+}
+
+#whatSWD{
+    display: block;
+    margin: auto;
+}
+
+.PreventingPage li{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 55px;
+    background-color: #BDE8F5;
+    font-family: "Lalezar", sans-serif;
+    width: 195.65px;
+    height: 53.4px;
+    font-size: 28.83px;
+    border-radius: 8.42px;
+    color: #4988C4;
+    border: none;
+    cursor: crosshair;
+    margin-right: 52.81px;
+}
