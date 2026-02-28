@@ -8,12 +8,22 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1C4D8D;
     border-radius: 0px 0px 18px 18px;
+    padding: 10px 0px
 }
 
 nav ul{
@@ -27,7 +37,13 @@ nav ul{
 nav ul li a{
     color: #BDE8F5;
     text-decoration: none;
-    cursor: move;
+    cursor: crosshair;
+}
+
+nav ul li a:hover{
+    transform: scale(1.07);
+
+    color: #f0f0f0;
 }
 
 .CharityButton{
@@ -87,17 +103,28 @@ main section .water{
 .UrgencyPage{
     background-color: #1c4d8d;
     margin-top: 220px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.UrgencyContent{
+    max-width: 500px;
 }
 
 .UrgencyPage p{
-    font: "labrada";
+    font-family: "labrada";
     color: #f0f0f0;
 }
 
 .UrgencyPage h2{
-    font: "Lalezar";
+    font-family: "Lalezar", sans-serif;
     font-size: 79.71px;
     color: #f0f0f0;
+    line-height: 87px;
 }
 
 .ReportButton{
@@ -105,36 +132,122 @@ main section .water{
     text-align: center;
     text-decoration: none;
     line-height: 55px;
-    background-color: #BDE8F5;
+    background-color: transparent;
     font-family: "Lalezar", sans-serif;
     width: 195.65px;
     height: 53.4px;
     font-size: 28.83px;
     border-radius: 8.42px;
-    color: #4988C4;
-    border: none;
+    color: transparent;
+    -webkit-text-stroke: 1px #BDE8F5;
+    border: 2px solid #BDE8F5;
     cursor: crosshair;
     margin-right: 52.81px;
+    margin-top: 32.47px;
+}
+
+.ReportButton:hover{
+    background-color: #BDE8F5;
+    color: #4988C4;
+    border: 2px solid #BDE8F5;
+}
+
+@keyframes wiggle{
+    0% {
+        transform: rotate(-3deg) translateX(2px) translateY(-2px);
+    }
+    50% {
+        transform: rotate(3deg) translateX(-2px) translateY(2px);
+    }
+    100% {
+        transform: rotate(-3deg) translateX(2px) translateY(-2px);
+    }
+}
+
+#person:hover{
+    animation: wiggle 0.6s ease-in-out infinite;
+}
+
+.person{
+    transition: transform 0.3s ease;
+}
+
+.person:hover{
+    transform: scale(1.09);
 }
 
 #whatSWD{
     display: block;
-    margin: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PreventingPage{
+    background-image: linear-gradient(#1C4D8D, #0F2854);
+    padding-bottom: 30px;
 }
 
 .PreventingPage li{
-    display: inline-block;
-    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    line-height: 55px;
     background-color: #BDE8F5;
     font-family: "Lalezar", sans-serif;
-    width: 195.65px;
-    height: 53.4px;
+    width: 500px;
+    height: 72px;
     font-size: 28.83px;
     border-radius: 8.42px;
     color: #4988C4;
     border: none;
     cursor: crosshair;
-    margin-right: 52.81px;
+
+    transition: transform 0.3s ease;
+}
+
+.PreventingPage ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 0px;
+    justify-items: center;
+}
+
+.PreventingPage ul li:hover{
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 #091f44;
+}
+
+.AboutUsPage{
+    display: flex;
+    font-family: "Labrada";
+    justify-content: space-between;
+    background-color: #081730;
+    color: #f0f0f0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.AboutUsContent{
+    max-width: 500px;
+    padding-top: 20px;
+}
+
+.contact{
+    margin-top: 20px;
+}
+
+.email{
+    display: flex;
+    margin-bottom: 10px;
+}
+.instagram{
+    display: flex;
+}
+
+#logoLast{
+    width: 402.21px;
+    height: 425.27px;
 }
