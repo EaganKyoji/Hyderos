@@ -23,7 +23,7 @@ nav{
     align-items: center;
     background-color: #1C4D8D;
     border-radius: 0px 0px 18px 18px;
-    padding: 10px 0px
+    padding: 10px 0px;
 }
 
 nav ul{
@@ -35,14 +35,13 @@ nav ul{
 }
 
 nav ul li a{
+    display: inline-block;
     color: #BDE8F5;
     text-decoration: none;
     cursor: crosshair;
 }
 
 nav ul li a:hover{
-    transform: scale(1.07);
-
     color: #f0f0f0;
 }
 
